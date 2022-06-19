@@ -36,6 +36,7 @@ const quizData = [
   },
 ];
 
+/*eslint-env browser*/
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEL = document.getElementById('question')
