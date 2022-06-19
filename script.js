@@ -1,4 +1,5 @@
 /*eslint-env es6*/
+/*jslint: true */
 const quizData = [
   {
       question: "Which language runs in a web browser",
