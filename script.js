@@ -28,7 +28,7 @@ const quizData = [
   },
   {
 
-    question: "Jvascript is launched in which year?",
+    question: "Javascript is launched in which year?",
     a: "1996",
     b: "1995",
     c: "1994",
