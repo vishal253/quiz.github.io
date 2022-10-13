@@ -1,5 +1,5 @@
 /*eslint-env es6*/
-/*jslint: true */
+/*jslint node: true */
 const quizData = [
   {
       question: "Which language runs in a web browser",
@@ -35,6 +35,74 @@ const quizData = [
     d: "none of the above",
     correct: "b",
   },
+	{
+
+    question: "Javascript is an ________language?",
+    a: "Object-Oriented",
+    b: "Object-Based",
+    c: "Procedural",
+    d: "none of the above",
+    correct: "a",
+  },
+	{
+
+    question: "Which of the following keywords is used to define a variable in Javascript?",
+    a: "var",
+    b: "let",
+    c: "Both a and b",
+    d: "none of the above",
+    correct: "a",
+  },
+	{
+
+    question: "Which of the following methods is used to access HTML elements using Javascript?",
+    a: "getElementbyId()",
+    b: "getElementsByClassName()",
+    c: "Both a and b",
+    d: "none of the above",
+    correct: "c",
+  },
+	{
+
+    question: "Which of the following methods can be used to display data in some form using Javascript?",
+    a: "document.write()",
+    b: "console.log()",
+    c: "window.alert",
+    d: "All of the above",
+    correct: "d",
+  },
+	{
+    question: "How can a datatype be declared to be a constant type?",
+    a: "const",
+    b: "var",
+    c: "let",
+    d: "constant",
+    correct: "a",
+  },
+	//{
+   // question: "What will be the output of the following code snippet?",
+
+     //     "<script type="text/javascript">,
+//a = 5 + "9";
+//document.write(a);
+//</script>",
+		
+		
+   // a: "compilation Error",
+   // b: "14",
+   // c: "Runtime Error",
+   // d: "59",
+   // correct: "d",
+ // },
+	{
+    question: "Which of the following is not a Javascript framework?",
+    a: "Node",
+    b: "Vue",
+    c: "React",
+    d: "Cassandra",
+    correct: "d",
+  },
+	
 ];
 
 /*eslint-env browser*/
@@ -94,10 +162,11 @@ submitBtn.addEventListener('click', () => {
     if(currentQuiz < quizData.length) {
       loadQuiz()
     }else {
-       quiz.innerHTML = `
-        <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+       quiz.innerHTML =`
+          <h2>You answered ${score}/${quizData.length} questions correctly</h2>
        <button onclick="history.go(0)">Play Again</button>
-       `
+
+      `
     }
   }
 });
